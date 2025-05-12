@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайты на заказ</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header-box">
+        <nav>
+            <a href="" class="navigation">Главная</a>
+            <a href="" class="navigation">Тех-поддержка</a>
+            <a href="" class="navigation">Связь с разработчиком</a>
+            <a href="" class="navigation">Заказать сайт</a>
+        </nav>
+    </header>
+    <button id="themeToggleBtn" title="Переключить тему">🌙</button>
+
+    <main>
+        <section class="plusi">
+            <h2>Наши плюсы:</h2>
+            <ul>
+                <li><strong>Низкие цены и доступность:</strong> Цены на наши сайты очень доступные, заказать сайт может почти каждый. Стоимость зависит от вашего желания и наполнения веб-сайта.</li>
+                <li><strong>Индивидуальный дизайн:</strong> Мы создаём уникальные дизайны, которые вы не встретите больше нигде.</li>
+                <li><strong>Поддержка почти 24/7:</strong> Отзывчивая и быстрая поддержка, особенно в дневное время. Если вопрос чёткий — вы получите точный и оперативный ответ.</li>
+            </ul>
+        </section>
+    </main>
+<!-- Секция с ценами -->
+<section id="prices" class="prices-section">
+    <h2>Цена</h2>
+    <div class="price-cards">
+        <div class="price-card">
+            <h3>Сайт про вас</h3>
+            <p>От 50 Злотых</p>
+            <ul>
+                <li>1 страница</li>
+                <li>Минималистичность</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<div class="button-container">
+    <a href="https://t.me/kaosd123" class="telegram-button" target="_blank">Написать в Telegram</a>
+</div>
+
+
+<!-- Кнопка наверх -->
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Наверх">↑</button>
+
+    <footer class="footer-box">
+        <nav>
+            <a href="" class="navigation">Главная</a>
+            <a href="" class="navigation">Тех-поддержка</a>
+            <a href="" class="navigation">Связь с разработчиком</a>
+            <a href="" class="navigation">Заказать сайт</a>
+        </nav>
+    </footer>
+    <script>
+        const toggleBtn = document.getElementById("themeToggleBtn");
+        const body = document.body;
+    
+        toggleBtn.addEventListener("click", () => {
+            body.classList.toggle("dark-theme");
+    
+            // Меняем иконку кнопки
+            toggleBtn.textContent = body.classList.contains("dark-theme") ? "☀️" : "🌙";
+        });
+    </script>
+
+</body>
+</html>
